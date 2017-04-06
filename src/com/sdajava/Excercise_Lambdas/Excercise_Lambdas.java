@@ -23,13 +23,16 @@ public class Excercise_Lambdas {
         }
     }
 
-    public static List<String> taskTitles (List<Task> tasks){
+    public static List<String> taskName (List<Task> tasks){
         List<String> readingTitles = new ArrayList<>();
 
         for(Task task : tasks){
             if(task.getType() == TaskType.READING){
                 readingTitles.add(task.getTitle());
             }
+        }
+        for (String p : readingTitles){
+            System.out.println(p);
         }
         return readingTitles;
     }

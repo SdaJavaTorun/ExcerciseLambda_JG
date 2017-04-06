@@ -39,8 +39,8 @@ public class Task {
     public static List<Task> getTasks(){
         List<Task> list = new ArrayList<>();
         list.add(new Task("Wpisywanie", 1, TaskType.TAKE));
-        list.add(new Task("Czytanie", 1, TaskType.READING));
-        list.add(new Task("Oddawanie", 1, TaskType.GIVE));
+        list.add(new Task("Czytanie", 2, TaskType.READING));
+        list.add(new Task("Oddawanie", 3, TaskType.GIVE));
 
         return list;
     }
