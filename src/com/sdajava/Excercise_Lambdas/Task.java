@@ -45,7 +45,7 @@ public class Task {
         return list;
     }
     public static List<String> taskName(List<Task> list){
-      return  list.stream().map(s -> s.getTitle()).collect(Collectors.toList());
+      return  list.stream().filter(s -> s.getType() == TaskType.READING).map(s -> s.getTitle()).collect(Collectors.toList());
     }
 
     public TaskType getType() {
